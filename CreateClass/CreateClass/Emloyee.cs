@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CreateClass
 {
-   class Program
+    class Emloyee: Person
     {
-        static void Main(string[] args)
-        {
-        }
+
     }
 }
