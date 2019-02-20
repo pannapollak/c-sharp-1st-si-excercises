@@ -6,16 +6,30 @@ using System.Threading.Tasks;
 
 namespace CreateClass
 {
-    abstract class Person
+    public class Person
     {
-        string Name;
-        DateTime BirthDate;
+        private char v;
 
-        enum Genders { Male, Female };
+        public Person(char v, string name, DateTime birthDate)
+        {
+            this.v = v;
+            Name = name;
+            BirthDate = birthDate;
+        }
+
+        public string Name { get; set; }
+        public DateTime BirthDate { get; set; }
+
+        enum Gender
+        {
+            Male,
+            Female
+        };
+
 
         public override string ToString()
         {
-            return base.ToString() + ":" enum.ToString();
+            return base.ToString() + " Name: " + v.ToString();
         }
     }
 }

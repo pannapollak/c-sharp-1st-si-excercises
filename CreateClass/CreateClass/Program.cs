@@ -10,6 +10,9 @@ namespace CreateClass
     {
         static void Main(string[] args)
         {
+            Person person = new Person('a');
+            Console.WriteLine(person.ToString());
+            Person employee = new Employee();
         }
     }
 }
