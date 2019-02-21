@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CreateClass
 {
-    class Room
+    public class Room
     {
+        public int RoomNumber { get; private set; }
     }
 }

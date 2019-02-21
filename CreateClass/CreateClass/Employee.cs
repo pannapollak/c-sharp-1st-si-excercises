@@ -4,7 +4,7 @@ namespace CreateClass
 {
     public class Employee : Person
     {
-        public Employee(char v, string name, DateTime birthDate, int salary, string profession) : base(v, name, birthDate)
+        public Employee(char v, string name, DateTime birthDate, int salary, string profession, int roomNumber) : base(v, name, birthDate)
         {
         }
 
