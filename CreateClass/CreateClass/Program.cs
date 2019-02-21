@@ -10,7 +10,7 @@ namespace CreateClass
     {
         static void Main(string[] args)
         {
-            Person person = new Person('a');
+            Person person = new Person('a', "2009-06-15");
             Console.WriteLine(person.ToString());
             Person employee = new Employee();
         }
