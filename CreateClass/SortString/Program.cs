@@ -6,14 +6,23 @@ using System.Threading.Tasks;
 
 namespace SortString
 {
-    class Program
+    public class Program
     {
-        string myStr = "Microsoft .NET Framework 2.0 Application Development Foundation";
+        static string myStr = "Microsoft .NET Framework 2.0 Application Development Foundation";
 
-        string[] words = myStr.Split(' ');
+        public string[] words = myStr.Split(' ');
+
+        public string PlayWithStrings(string[] words)
+        {
+            Array.Sort(words);
+            myStr = string.Join(" ", words);
+            return myStr;
+        }
+
 
         static void Main(string[] args)
         {
+            Console.WriteLine(myStr);
         }
     }
 }
