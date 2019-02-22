@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TimerEvents.Properties
+namespace WpfApp4.Properties
 {
 
 
