@@ -5,8 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TimerEvents"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="1000" Width="1500">
     <Grid>
-        
+        <ProgressBar x:Name="myProgressBar" HorizontalAlignment="Left" Height="98" VerticalAlignment="Top" Width="1060" Margin="215,498,0,0" ValueChanged="ProgressBar_ValueChanged"/>
+
     </Grid>
 </Window>

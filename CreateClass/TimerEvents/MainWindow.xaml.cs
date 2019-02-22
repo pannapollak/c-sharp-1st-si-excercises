@@ -10,8 +10,8 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Windows.Threading;
 
 namespace TimerEvents
 {
@@ -23,6 +23,28 @@ namespace TimerEvents
         public MainWindow()
         {
             InitializeComponent();
+        }
+        private DispatcherTimer _timer;
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            _timer = new DispatcherTimer();
+            _timer.Interval = new TimeSpan(0, 0, 1);
+            _timer.Tick += new EventHandler(dispatcherTimer_Tick);
+            _timer.Start();
+        }
+
+        private void dispatcherTimer_Tick(object sender, EventArgs e)
+        {
+            myProgressBar.Value += 10;
+            if (myProgressBar.Value >= 100)
+            {
+                _timer.Stop();
+            }
+        }
+
+        private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
         }
     }
 }
