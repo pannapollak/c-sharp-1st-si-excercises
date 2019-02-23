@@ -37,6 +37,16 @@ namespace SequentialCollections
             }
             Console.WriteLine("And here is a very useful copy of our queue as an array, enjoy: " + randomQueue.ToArray());
             Console.WriteLine("Let's see the first element, if you forgot: " + randomQueue.Peek());
+
+            Stack randomStack = new Stack();
+
+            randomStack.Push("First");
+            randomStack.Push("Second");
+            randomStack.Push("Third");
+            randomStack.Push("Fourth");
+
+
+
         }
     }
 }
