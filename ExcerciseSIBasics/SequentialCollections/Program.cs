@@ -36,7 +36,18 @@ namespace SequentialCollections
                 Console.WriteLine(element + " ");
             }
             Console.WriteLine("And here is a very useful copy of our queue as an array, enjoy: " + randomQueue.ToArray());
-            Console.WriteLine("Let's see the first element, if you forgot: " + randomQueue.Peek());
+            Console.WriteLine("Let's see the first element, if you forgot, before we empty the queue: " + randomQueue.Peek());
+
+            var randomStartCount = randomQueue.Count;
+            for (int i = 0; i < randomStartCount; i++)
+            {
+                if (randomQueue.Count != 0)
+                {
+                    randomQueue.Dequeue();
+                }
+                Console.WriteLine("current count of the queue: " + randomQueue.Count);
+            }
+
 
             Stack randomStack = new Stack();
 
@@ -45,8 +56,17 @@ namespace SequentialCollections
             randomStack.Push("Third");
             randomStack.Push("Fourth");
 
-
-
+            int startCount = randomStack.Count;
+            for (int i = 0; i < startCount; i++)
+            {
+                if (randomStack.Count != 0)
+                {
+                    randomStack.Pop();
+                }
+                Console.WriteLine(randomStack.Count);
+            }
+            randomStack.Push("wat");
+            Console.WriteLine("here is the new element we added: " + randomStack.Peek());
         }
     }
 }
