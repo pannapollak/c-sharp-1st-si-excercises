@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DictionaryCollections", "Di
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LookupCollections", "LookupCollections\LookupCollections.csproj", "{D5039DFC-E36F-4314-BEB0-0DD3E5295A0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericCollections", "GenericCollections\GenericCollections.csproj", "{9A1D1CE4-A756-44E3-9770-0502A07246BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashMap", "HashMap\HashMap.csproj", "{B4F77216-C76F-43E8-AEAF-6DDF8730CD69}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,14 @@ Global
 		{D5039DFC-E36F-4314-BEB0-0DD3E5295A0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5039DFC-E36F-4314-BEB0-0DD3E5295A0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5039DFC-E36F-4314-BEB0-0DD3E5295A0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A1D1CE4-A756-44E3-9770-0502A07246BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A1D1CE4-A756-44E3-9770-0502A07246BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A1D1CE4-A756-44E3-9770-0502A07246BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A1D1CE4-A756-44E3-9770-0502A07246BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4F77216-C76F-43E8-AEAF-6DDF8730CD69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4F77216-C76F-43E8-AEAF-6DDF8730CD69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4F77216-C76F-43E8-AEAF-6DDF8730CD69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4F77216-C76F-43E8-AEAF-6DDF8730CD69}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
