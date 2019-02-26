@@ -24,17 +24,16 @@ namespace HashMap
             HashMapList.Add(newPair);
         }
 
-        public void ReadFromHashMap(string key)
+        public int ReadFromHashMap(string key)
         {
             foreach (var hash in HashMapList)
             {
                 if (hash.Key == key)
                 {
-                    Console.WriteLine(hash.Value);
+                    return hash.Value;
                 }
-
             }
-            throw new ArgumentException("no key found");
+            return 0;
         }
 
         public void ReadAllFromHashMap()
@@ -43,20 +42,19 @@ namespace HashMap
             {
                 Console.WriteLine(pairs.Value);
             }
-
         }
 
-        public bool DeleteFromHashMap(string key)
+        public string DeleteFromHashMap(string key)
         {
             foreach (var hash in HashMapList)
             {
                 if (hash.Key == key)
                 {
                     HashMapList.Remove(hash);
-                    return true;
+                    return "Key deleted";
                 }
             }
-            return false;
+            return "no key to delete";
         }
     }
 }

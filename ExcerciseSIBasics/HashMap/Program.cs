@@ -21,13 +21,12 @@ namespace HashMap
             hashMap.AddToHashMap("wewe", 91);
             hashMap.AddToHashMap("tere", 354);
             hashMap.AddToHashMap("bede", 304);
-            hashMap.AddToHashMap("meme", 0);
+            hashMap.AddToHashMap("meme", 999);
+            Console.WriteLine(hashMap.ReadFromHashMap("vava"));
+            Console.WriteLine(hashMap.DeleteFromHashMap("gfds"));
             hashMap.ReadAllFromHashMap();
-            //hashMap.ReadFromHashMap("vava");
-            hashMap.ReadFromHashMap("tere");
-            hashMap.ReadFromHashMap("miau");
-            //hashMap.DeleteFromHashMap("huhu");
-            //hashMap.DeleteFromHashMap("tere");
+            Console.WriteLine("supposedly printed all");
+
         }
     }
 }
