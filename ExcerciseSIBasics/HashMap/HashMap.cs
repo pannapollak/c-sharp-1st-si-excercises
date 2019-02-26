@@ -8,7 +8,6 @@ namespace HashMap
 {
     public class HashMap
     {
-
         public List<KeyValuePair> HashMapList { get; set; }
 
 
@@ -19,7 +18,7 @@ namespace HashMap
             {
                 if (hash.Key == key)
                 {
-                    throw new System.ArgumentException("key aready exists");
+                    throw new ArgumentException("key aready exists");
                 }
             }
             HashMapList.Add(newPair);
@@ -34,8 +33,17 @@ namespace HashMap
                     Console.WriteLine(hash.Value);
                 }
 
-                throw new ArgumentException("no key found");
             }
+            throw new ArgumentException("no key found");
+        }
+
+        public void ReadAllFromHashMap()
+        {
+            foreach (var pairs in HashMapList)
+            {
+                Console.WriteLine(pairs.Value);
+            }
+
         }
 
         public bool DeleteFromHashMap(string key)
